@@ -22,16 +22,14 @@
   <div class="marquee">
     <div class="track">
       <div class="set">
-        <img src="logo1.png" alt="Logo 1">
-        <img src="logo2.png" alt="Logo 2">
-        <img src="logo3.png" alt="Logo 3">
-        <img src="logo4.png" alt="Logo 4">
+        <img src="hype.png" alt="Logo 1">
+        <img src="jack&jill.png" alt="Logo 2">
+        <img src="mando.png" alt="Logo 3">
       </div>
       <div class="set" aria-hidden="true">
         <img src="logo1.png" alt="">
         <img src="logo2.png" alt="">
         <img src="logo3.png" alt="">
-        <img src="logo4.png" alt="">
       </div>
     </div>
   </div>
