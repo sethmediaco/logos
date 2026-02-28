@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    :root { --h: 72px; --gap: 56px; --speed: 28s; }
+    body { margin:0; background:transparent; }
+    .marquee { height: var(--h); overflow:hidden; background:transparent; }
+    .track{
+      display:flex; align-items:center; gap: var(--gap);
+      width:max-content;
+      animation: scroll var(--speed) linear infinite;
+      will-change: transform;
+    }
+    .set{ display:flex; align-items:center; gap: var(--gap); }
+    img{ height: calc(var(--h) - 10px); width:auto; display:block; opacity:.95; }
+    @keyframes scroll { from{ transform:translateX(0);} to{ transform:translateX(-50%);} }
+  </style>
+</head>
+<body>
+  <div class="marquee">
+    <div class="track">
+      <div class="set">
+        <img src="logo1.png" alt="Logo 1">
+        <img src="logo2.png" alt="Logo 2">
+        <img src="logo3.png" alt="Logo 3">
+        <img src="logo4.png" alt="Logo 4">
+      </div>
+      <div class="set" aria-hidden="true">
+        <img src="logo1.png" alt="">
+        <img src="logo2.png" alt="">
+        <img src="logo3.png" alt="">
+        <img src="logo4.png" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
